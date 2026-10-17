@@ -30,8 +30,53 @@
 }
 
 .sidebar {
-  grid-area: 1 / 1 / -1;
   background-color: var(--sidebar-bg-color);
+  padding: 10px;
+  grid-area: 1 / 1 / -1;
+  display: grid;
+  grid-template-rows: 32px 192px 96px;
+  gap: 50px;
+}
+
+.sidebar > * {
+  color: white;
+  font-weight: 700;
+}
+
+.top,
+.middle > *,
+.bottom > * {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 4px;
+}
+
+.top {
+  font-size: 18px;
+}
+
+.branding,
+.navigation {
+  display: grid;
+  align-items: center;
+}
+
+.branding {
+  justify-items: center;
+}
+
+.branding img {
+  filter: invert(1);
+}
+
+.middle {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.bottom {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .header {
