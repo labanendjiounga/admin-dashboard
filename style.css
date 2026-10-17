@@ -22,7 +22,7 @@
 .container {
   height: 100vh;;
   display: grid;
-  grid-template: 1fr 2fr / 1fr 2fr;
+  grid-template: 0.5fr 2fr / 0.5fr 2fr;
 }
 
 .container > * {
@@ -48,11 +48,16 @@
 .bottom > * {
   display: grid;
   grid-template-columns: 32px 1fr;
-  gap: 4px;
+  gap: 8px;
 }
 
 .top {
   font-size: 18px;
+}
+
+.middle > *,
+.bottom > * {
+  font-size: 14px;
 }
 
 .branding,
@@ -65,8 +70,15 @@
   justify-items: center;
 }
 
+.top .branding img {
+  width: 32px;
+  height: 32px;
+}
+
 .branding img {
   filter: invert(1);
+  width: 16px;
+  height: 16px;
 }
 
 .middle {
