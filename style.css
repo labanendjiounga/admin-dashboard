@@ -34,6 +34,10 @@
   background-color: var(--sidebar-bg-color);
 }
 
+.header {
+  box-shadow: 0 4px 4px var(--main-bg-color);
+}
+
 .main {
   background-color: var(--main-bg-color);
 }
