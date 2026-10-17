@@ -8,4 +8,32 @@
                 "Apple Color Emoji",
                 "Segoe UI Emoji",
                 "Segoe UI Symbol";
+  
+  box-sizing: border-box;
+  
+  --sidebar-bg-color: rgb(13, 150, 235);
+  --main-bg-color: rgba(13, 150, 235, 0.1);
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;;
+  display: grid;
+  grid-template: 1fr 2fr / 1fr 2fr;
+}
+
+.container > * {
+  height: 100%;
+}
+
+.sidebar {
+  grid-area: 1 / 1 / -1;
+  background-color: var(--sidebar-bg-color);
+}
+
+.main {
+  background-color: var(--main-bg-color);
 }
