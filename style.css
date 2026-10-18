@@ -171,6 +171,16 @@ button {
   height: 32px;
 }
 
+.username.small {
+  font-size: 14px;
+}
+
+.greeting,
+.username.small,
+.username {
+  font-weight: 700;
+}
+
 .main {
   background-color: var(--main-bg-color);
 }
