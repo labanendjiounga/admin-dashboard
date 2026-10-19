@@ -19,17 +19,16 @@
   margin: 0;
 }
 
+body {
+  height: 100vh;
+}
+
 .grid {
   display: grid;
 }
 
 .container {
-  height: 100vh;
   grid-template: 0.5fr 2fr / 0.5fr 2fr;
-}
-
-.container > * {
-  height: 100%;
 }
 
 .sidebar {
@@ -183,4 +182,53 @@ button {
 
 .main {
   background-color: var(--main-bg-color);
+  padding: 24px 24px 48px 14px;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.projects {
+  grid-template-rows: 16px repeat(3, 1fr);
+  gap: 16px;
+}
+
+.projects-top,
+.projects-mid,
+.projects-btm {
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background-color: white;
+  grid-template-rows: 1fr min-content;
+  border-left: 6px solid orange;
+  border-radius: 6px;
+  padding: 24px 12px 12px 16px;
+}
+
+.texts {
+  grid-template-rows: min-content 1fr;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.icons {
+  grid-template-columns: repeat(3, min-content);
+  justify-content: end;
+  gap: 16px;
+  padding-right: 16px;
+}
+
+.icons > img {
+  width: 16px;
+  height: 16px;
 }
