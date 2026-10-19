@@ -11,7 +11,7 @@
   
   box-sizing: border-box;
   
-  --sidebar-bg-color: rgb(13, 150, 235);
+  --sidebar-bg-color: rgb(80, 150, 235);
   --main-bg-color: rgba(103, 122, 134, 0.2);
 }
 
@@ -286,7 +286,7 @@ hr {
 
 .trending-card > * {
   grid-template: 1fr 1fr / 36px 1fr;
-  column-gap: 16px;
+  gap: 2px 16px;
 }
 
 .avatar {
