@@ -32,7 +32,7 @@
   background-color: var(--sidebar-bg-color);
   grid-template-rows: repeat(3, max-content);
   grid-area: 1 / 1 / -1;
-  padding: 10px;
+  padding: 12px;
   gap: 50px;
 }
 
@@ -134,7 +134,8 @@ h2,
 .buttons,
 .main,
 .projects-wrapper,
-.project-icons {
+.project-icons,
+.trending-card {
   gap: 16px;
 }
 
@@ -145,7 +146,7 @@ h2,
 input[type="search"] {
   background-color: var(--main-bg-color);
   border: 0px solid var(--main-bg-color);
-  height: 24px;
+  height: 28px;
   padding: 0 12px;
 }
 
@@ -160,7 +161,7 @@ button {
 }
 
 .welcome {
-  grid-template: repeat(2, min-content) / 50px 1fr;
+  grid-template: repeat(2, min-content) / 75px 1fr;
   gap: 8px 16px;
 }
 
@@ -170,8 +171,8 @@ button {
 }
 
 .big-profile-avatar img {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
 
 .greeting,
@@ -231,8 +232,12 @@ button {
 
 .main {
   background-color: var(--main-bg-color);
-  padding: 24px 32px 48px 16px;
-  grid-template-columns: 2fr 1fr;
+  padding: 24px 32px 36px 16px;
+  grid-template: 0.5fr 0.5fr / 2fr 1fr;
+}
+
+.main-projects {
+  grid-row: 1 / -1
 }
 
 .main-projects h2 {
@@ -256,6 +261,14 @@ button {
 .projects-wrapper {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 1fr;
+}
+
+.announcements-wrapper {
+  grid-column: 2;
+}
+
+.trending-wrapper {
+  grid-column: 2;
 }
 
 .card {
@@ -286,9 +299,8 @@ button {
   padding-right: 16px;
 }
 
-.main-sidebar {
-  grid-template-rows: 1fr 1fr;
-  gap: 32px;
+.announcement-card {
+  grid-template-rows: min-content min-content min-content;
 }
 
 .announcement-card,
@@ -305,6 +317,7 @@ button {
 .trending {
   grid-template: repeat(2, 1fr) / 36px 1fr;
   gap: 2px 16px;
+  justify-content: center;
 }
 
 .trending-card > div:first-child .user-avatar img {
