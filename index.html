@@ -12,62 +12,60 @@
 <body>
   <div class="container grid">
     
-    <div class="sidebar grid">
+    <div class="sidebar-wrapper grid">
       
       <div class="sidebar-top grid">
-        
         <div class="branding grid"><img src="./img/dashboard.svg" alt="Dashboard icon" width="32" height="32"></div>
         <div class="navigation grid">Dashboard</div>
-        
       </div>
 
-      <div class="sidebar-middle grid">
+      <div class="sidebar-middle-wrapper grid">
 
-        <div class="grid">
+        <div class="sidebar-middle grid">
           <div class="branding grid"><img src="./img/home.svg" alt="Home icon" width="16" height="16"></div>
           <div class="navigation grid">Home</div>
         </div>
 
-        <div class="grid">
+        <div class="sidebar-middle grid">
           <div class="branding grid"><img src="./img/profile.svg" alt="Profile icon" width="16" height="16"></div>
           <div class="navigation grid">Profile</div>
         </div>
 
-        <div class="grid">
+        <div class="sidebar-middle grid">
           <div class="branding grid"><img src="./img/messages.svg" alt="Messages icon" width="16" height="16"></div>
           <div class="navigation grid">Messages</div>
         </div>
 
-        <div class="grid">
+        <div class="sidebar-middle grid">
           <div class="branding grid"><img src="./img/history.svg" alt="History icon" width="16" height="16"></div>
           <div class="navigation grid">History</div>
         </div>
 
-        <div class="grid">
+        <div class="sidebar-middle grid">
           <div class="branding grid"><img src="./img/tasks.svg" alt="Tasks icon" width="16" height="16"></div>
           <div class="navigation grid">Tasks</div>
         </div>
 
-        <div class="grid">
+        <div class="sidebar-middle grid">
           <div class="branding grid"><img src="./img/communities.svg" alt="Communities icon" width="16" height="16"></div>
           <div class="navigation grid">Communities</div>
         </div>
 
       </div>
 
-      <div class="sidebar-bottom grid">
+      <div class="sidebar-bottom-wrapper grid">
         
-        <div class="grid">
+        <div class="sidebar-bottom grid">
           <div class="branding grid"><img src="./img/settings.svg" alt="Settings icon" width="16" height="16"></div>
           <div class="navigation grid">Settings</div>
         </div>
 
-        <div class="grid">
+        <div class="sidebar-bottom grid">
           <div class="branding grid"><img src="./img/support.svg" alt="Support icon" width="16" height="16"></div>
           <div class="navigation grid">Support</div>
         </div>
 
-        <div class="grid">
+        <div class="sidebar-bottom grid">
           <div class="branding grid"><img src="./img/privacy.svg" alt="Privacy icon" width="16" height="16"></div>
           <div class="navigation grid">Privacy</div>
         </div>
@@ -78,30 +76,30 @@
 
     <div class="header grid">
       
-      <div class="header-top grid">
+      <div class="header-left-wrapper grid">
         
-        <div class="header-top-left grid">
-          <div class="branding grid"><img src="./img/search.svg" alt="Search icon" width="16" height="16"></div>
-          <div class="search-bar grid"></div>
+        <div class="search grid">
+          <div class="search-icon grid"><img src="./img/search.svg" alt="Search icon" width="16" height="16"></div>
+          <div class="search-bar grid"><input type="search"></div>
         </div>
 
-        <div class=" header-top-right grid">
-          <div class="branding grid"><img src="./img/notifications.svg" alt="Notifications icon" width="16" height="16"></div>
-          <div class="grid"><img src="./img/kitten-penguin-costume-with-headphones.svg" alt="Kitten penguin costume with headphones" width="36" height="36"></div>
-          <div class="username small grid">Morgan Oakley</div>
+        <div class="welcome grid">
+          <div class="big-profile-avatar grid"><img src="./img/kitten-penguin.svg" alt="Big kitten penguin with headphones" width="50" height="50"></div>
+          <div class="greeting grid">Hi there,</div>
+          <div class="user-infos grid">Morgan Oakley (@morgan)</div>
         </div>
 
       </div>
 
-      <div class="header-bottom grid">
+      <div class="header-right-wrapper grid">
 
-        <div class="header-bottom-left grid">
-          <div class="grid"><img src="./img/kitten-penguin-costume-with-headphones.svg" alt="Kitten penguin costume with headphones" width="50" height="50"></div>
-          <div class="greeting grid">Hi there,</div>
-          <div class="username grid">Morgan Oakley (@morgan)</div>
+        <div class="notifications grid">
+          <div class="notifications-icon grid"><img src="./img/notifications.svg" alt="Notifications icon" width="16" height="16"></div>
+          <div class="small-profile-avatar grid"><img src="./img/kitten-penguin.svg" alt="Small kitten penguin with headphones" width="36" height="36"></div>
+          <div class="user-fullname grid">Morgan Oakley</div>
         </div>
 
-        <div class=" header-bottom-right grid">
+        <div class="buttons grid">
           <button>New</button>
           <button>Upload</button>
           <button>Share</button>
@@ -113,86 +111,78 @@
 
     <div class="main grid">
 
-      <div class="projects grid">
+      <div class="main-projects grid">
         
-        <p>Your Projects</p>
+        <h2>Your Projects</h2>
         
-        <div class="projects-top grid">
+        <div class="projects-wrapper grid">
+
+          <div class="project-card card grid">
+            <div class="project grid">
+              <p class="project-title">Super Cool Project</p>
+              <p class="project-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
+            </div>
+            <div class="project-icons grid">
+              <img src="./img/star-plus.svg" alt="Star-plus icon" width="16" height="16">
+              <img src="./img/eye-plus.svg" alt="Eye-plus icon" width="16" height="16">
+              <img src="./img/source-fork.svg" alt="Source-fork icon" width="16" height="16">
+            </div>
+          </div>
+
+          <div class="project-card card grid">
+            <div class="project grid">
+              <p class="project-title">Less Cool Project</p>
+              <p class="project-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestias ipsam dignissimos blanditiis atque laboriosam omnis corporis quos natus dolore harum, nihil debitis, nam exercitationem ipsa incidunt excepturi mollitia minima!</p>
+            </div>
+            <div class="project-icons grid">
+              <img src="./img/star-plus.svg" alt="Star-plus icon" width="16" height="16">
+              <img src="./img/eye-plus.svg" alt="Eye-plus icon" width="16" height="16">
+              <img src="./img/source-fork.svg" alt="Source-fork icon" width="16" height="16">
+            </div>
+          </div>
           
-          <div class="card grid">
-            <div class="texts grid">
-              <p class="title">Super Cool Project</p>
-              <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
+          <div class="project-card card grid">
+            <div class="project grid">
+              <p class="project-title">Impossible App</p>
+              <p class="project-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
             </div>
-            <div class="icons grid">
+            <div class="project-icons grid">
               <img src="./img/star-plus.svg" alt="Star-plus icon" width="16" height="16">
               <img src="./img/eye-plus.svg" alt="Eye-plus icon" width="16" height="16">
               <img src="./img/source-fork.svg" alt="Source-fork icon" width="16" height="16">
             </div>
           </div>
 
-          <div class="card grid">
-            <div class="texts grid">
-              <p class="title">Less Cool Project</p>
-              <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestias ipsam dignissimos blanditiis atque laboriosam omnis corporis quos natus dolore harum, nihil debitis, nam exercitationem ipsa incidunt excepturi mollitia minima!</p>
+          <div class="project-card card grid">
+            <div class="project grid">
+              <p class="project-title">Easy Peasy App</p>
+              <p class="project-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
             </div>
-            <div class="icons grid">
+            <div class="project-icons grid">
               <img src="./img/star-plus.svg" alt="Star-plus icon" width="16" height="16">
               <img src="./img/eye-plus.svg" alt="Eye-plus icon" width="16" height="16">
               <img src="./img/source-fork.svg" alt="Source-fork icon" width="16" height="16">
             </div>
           </div>
-
-        </div>
-        
-        <div class="projects-mid grid">
           
-          <div class="card grid">
-            <div class="texts grid">
-              <p class="title">Impossible App</p>
-              <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
+          <div class="project-card card grid">
+            <div class="project grid">
+              <p class="project-title">Ad Blocker</p>
+              <p class="project-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
             </div>
-            <div class="icons grid">
+            <div class="project-icons grid">
               <img src="./img/star-plus.svg" alt="Star-plus icon" width="16" height="16">
               <img src="./img/eye-plus.svg" alt="Eye-plus icon" width="16" height="16">
               <img src="./img/source-fork.svg" alt="Source-fork icon" width="16" height="16">
             </div>
           </div>
 
-          <div class="card grid">
-            <div class="texts grid">
-              <p class="title">Easy Peasy App</p>
-              <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
+          <div class="project-card card grid">
+            <div class="project grid">
+              <p class="project-title">Monkey Maker</p>
+              <p class="project-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
             </div>
-            <div class="icons grid">
-              <img src="./img/star-plus.svg" alt="Star-plus icon" width="16" height="16">
-              <img src="./img/eye-plus.svg" alt="Eye-plus icon" width="16" height="16">
-              <img src="./img/source-fork.svg" alt="Source-fork icon" width="16" height="16">
-            </div>
-          </div>
-
-        </div>
-        
-        <div class="projects-btm grid">
-          
-          <div class="card grid">
-            <div class="texts grid">
-              <p class="title">Ad Blocker</p>
-              <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
-            </div>
-            <div class="icons grid">
-              <img src="./img/star-plus.svg" alt="Star-plus icon" width="16" height="16">
-              <img src="./img/eye-plus.svg" alt="Eye-plus icon" width="16" height="16">
-              <img src="./img/source-fork.svg" alt="Source-fork icon" width="16" height="16">
-            </div>
-          </div>
-
-          <div class="card grid">
-            <div class="texts grid">
-              <p class="title">Monkey Maker</p>
-              <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tenetur provident</p>
-            </div>
-            <div class="icons grid">
+            <div class="project-icons grid">
               <img src="./img/star-plus.svg" alt="Star-plus icon" width="16" height="16">
               <img src="./img/eye-plus.svg" alt="Eye-plus icon" width="16" height="16">
               <img src="./img/source-fork.svg" alt="Source-fork icon" width="16" height="16">
@@ -205,50 +195,63 @@
 
       <div class="main-sidebar grid">
 
-        <div class="announcements grid">
-          <p>Announcements</p>
-          <div class="announcement-card grid">
-            <div class="texts grid">
+        <div class="announcements-wrapper grid">
+          
+          <h2>Announcements</h2>
+          
+          <div class="announcement-card card grid">
+            
+            <div class="announcement grid">
               <p class="announcement-title">Site Maintenance</p>
               <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui exercitationem corrupti cupiditate quidem, culpa adipisci ipsam inventore voluptatem similique, veritatis asperiores facilis, nisi voluptates accusamus debitis in. Commodi, veniam.</p>
             </div>
-            <hr>
-            <div class="texts grid">
+            
+            <div class="announcement grid">
               <p class="announcement-title">Community Share Day</p>
               <p class="announcement-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto commodi molestiae eos, veniam placeat consectetur. Alias et, quasi natus cupiditate eveniet ullam atque blanditiis excepturi unde cum deleniti praesentium.</p>
             </div>
-            <hr>
-            <div class="texts grid">
+
+            <div class="announcement grid">
               <p class="announcement-title">Updated Privacy Policy</p>
               <p class="announcement-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in temporibus repellendus inventore soluta ad perspiciatis aliquid, ut ex repellat nulla dolor nostrum accusantium quibusdam. Nihil repellat eos error temporibus.</p>
             </div>
+
           </div>
+
         </div>
 
-        <div class="trending grid">
-          <p>Trending</p>
-          <div class="trending-card grid">
-            <div class="grid">
-              <div class="avatar grid"><img src="./img/anthropomorphized-animals-cartoon.svg" alt="Anthropomorphized animals cartoon" width="36" height="36"></div>
-              <div class="uname grid">@tegan</div>
-              <div class="description grid">World Peace Builder</div>
+        <div class="trending-wrapper grid">
+          
+          <h2>Trending</h2>
+          
+          <div class="trending-card card grid">
+            
+            <div class="trending grid">
+              <div class="user-avatar grid"><img src="./img/cartoon.svg" alt="Anthropomorphized cartoon" width="36" height="36"></div>
+              <div class="username grid">@tegan</div>
+              <div class="infos grid">World Peace Builder</div>
             </div>
-            <div class="grid">
-              <div class="avatar grid"><img src="./img/kitten-penguin-costume-with-headphones.svg" alt="Kitten penguin costume with headphones" width="36" height="36"></div>
-              <div class="uname grid">@morgan</div>
-              <div class="description grid">Super Cool Project</div>
+
+            <div class="trending grid">
+              <div class="user-avatar grid"><img src="./img/kitten-penguin.svg" alt="Small kitten penguin with headphones" width="36" height="36"></div>
+              <div class="username grid">@morgan</div>
+              <div class="infos grid">Super Cool Project</div>
             </div>
-            <div class="grid">
-              <div class="avatar grid"><img src="./img/anthropomorphized-animals-elephant.svg" alt="Anthropomorphized animals elephant" width="36" height="36"></div>
-              <div class="uname grid">@kendall</div>
-              <div class="description grid">Life Changing App</div>
+
+            <div class="trending grid">
+              <div class="user-avatar grid"><img src="./img/elephant.svg" alt="Anthropomorphized elephant" width="36" height="36"></div>
+              <div class="username grid">@kendall</div>
+              <div class="infos grid">Life Changing App</div>
             </div>
-            <div class="grid">
-              <div class="avatar grid"><img src="./img/cute-kitten-elephant-costume.svg" alt="Cute kitten elephant costume" width="36" height="36"></div>
-              <div class="uname grid">@alex</div>
-              <div class="description grid">No traffic marker</div>
+
+            <div class="trending grid">
+              <div class="user-avatar grid"><img src="./img/kitten-elephant.svg" alt="Cute kitten elephant" width="36" height="36"></div>
+              <div class="username grid">@alex</div>
+              <div class="infos grid">No traffic marker</div>
             </div>
+
           </div>
+
         </div>
 
       </div>
